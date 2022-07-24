@@ -54,7 +54,7 @@ pipeline {
 
     stage('Deploying App to Kubernetes') {
       steps {
-        sh 'kubectl apply -f k8s-spring-boot-deployment.yml'
+        sh 'kubectl apply -f deploymentservice.yml'
       } 
     }
   }
